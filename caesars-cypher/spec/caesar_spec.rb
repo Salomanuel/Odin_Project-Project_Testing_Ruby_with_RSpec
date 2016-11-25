@@ -28,7 +28,7 @@ describe CaesarCypher do
 
 
 		it "respects case height in the middle too" do
-			expect(@instance.caesar("AaAA")).to eql("Ffff")
+			expect(@instance.caesar("AaAA")).to eql("FfFF")
 		end
 
 		it "manages two words" do
