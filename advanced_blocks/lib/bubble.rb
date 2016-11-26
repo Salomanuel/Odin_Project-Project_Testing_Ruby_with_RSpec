@@ -20,7 +20,3 @@ def bubble_sort_by(array)
 		return array
 	end
 end
-
-
-puts bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length - right.length }
-puts bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length + right.length }
