@@ -6,3 +6,5 @@ require "caesar2"
 require "picker_new"
 
 require "substrings"
+
+require "wordcounter"
