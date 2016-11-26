@@ -10,3 +10,17 @@ def bubble_sort(array)
 	end
 	return array
 end
+
+def bubble_sort_by(array)
+	yield(array) > 0 ? (reverse ||= false) : (reverse ||= true)
+	case(reverse)
+	when true  then return bubble_sort(array)
+	when false then return bubble_sort(array).reverse
+	else
+		return array
+	end
+end
+
+
+puts bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length - right.length }
+puts bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length + right.length }

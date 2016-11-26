@@ -16,3 +16,13 @@ describe "#bubble" do
 		expect(bubble_sort(random)).to eql(random.sort)
 	end
 end
+
+describe "#bubble_sort_by" do
+	it "sorts three words"	do
+		expect(bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length - right.length }).to eql(["hello", "hey", "hi"])
+  end
+
+  it "sorts those words the other way too" do
+  	expect(bubble_sort_by(["hi", "hello", "hey"]) { |left, right| left.length + right.length }).to eql(["hi", "hey", "hello"])
+  end
+end
