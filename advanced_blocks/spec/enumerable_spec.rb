@@ -5,6 +5,7 @@ describe Enumerable do
 			@each    = []
 			@my_each = []
 			@randi =	rand(30).times.map{ rand(50) }
+			@animals = %w{ant bear cat}
 	end
 
 	describe "#my_each" do
@@ -36,15 +37,26 @@ describe Enumerable do
 	end
 	describe "#my_all?" do
 		it "works with example words" do
-			animals = %w{ant bear cat}
-			expected = animals.all? 		{ |word| word.length >= 3 }
-			result   = animals.my_all? 	{ |word| word.length >= 3 }
+			expected = @animals.all? 		{ |word| word.length >= 3 }
+			result   = @animals.my_all? { |word| word.length >= 3 }
 			expect(result).to eql(expected)
 		end
 
 		it "works with @rando" do
 			expected = @randi.all? 		{ |n| n > 5 }
 			result   = @randi.my_all? { |n| n > 5 }
+			expect(result).to eql(expected)
+		end
+	end
+	describe "#my_any?" do
+		it "works with the lame words" do
+			result   = @animals.my_any?	{ |word| word.length < 3 }
+			expected = @animals.any? 		{ |word| word.length < 3 }
+			expect(result).to eql(expected)
+		end
+		it "works with @randi" do
+			result   = @randi.my_any? { |n| n < 10 }
+			expected = @randi.any? 		{ |n| n < 10 }
 			expect(result).to eql(expected)
 		end
 	end

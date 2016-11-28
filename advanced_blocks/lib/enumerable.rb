@@ -31,6 +31,13 @@ module Enumerable
 		return list.size == self.size ? true : false
 	end
 
+	def my_any?(&block)
+		self.my_each do |element| 
+			return true if yield(element)
+		end
+		return false
+	end
+
 	def my_map(&block)
 		result = []
 		my_each { |element| result << block.call(element) }
@@ -47,7 +54,7 @@ module Enumerable
 				break
 			end
 		end
-		found ? result : nil
+		return result
 	end
 end
 
