@@ -17,6 +17,12 @@ module Enumerable
 		return self
 	end
 
+	def my_select(&block)
+		result = []
+		self.my_each { |element| result << element if yield(element) }
+		return result
+	end
+
 	def my_map(&block)
 		result = []
 		my_each { |element| result << block.call(element) }
@@ -36,3 +42,9 @@ module Enumerable
 		found ? result : nil
 	end
 end
+
+# include Enumerable
+# # (1..10).to_a.my_each { |i| puts i*2 }
+# arra = (1..10).to_a
+# puts arra.my_select{ |e| e % 2 == 0 }
+# puts arra.join(" ")

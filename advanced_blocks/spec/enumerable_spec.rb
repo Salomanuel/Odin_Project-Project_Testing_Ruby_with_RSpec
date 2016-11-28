@@ -27,6 +27,13 @@ describe Enumerable do
 			expect(@my_each).to eql(@each)
 		end
 	end
+	describe "#my_select" do
+		it "selects even numbers" do
+			expected = @randi.select 		{ |n| n % 2 == 0 }
+			result   = @randi.my_select	{ |n| n % 2 == 0 }
+			expect(result).to eql(expected)
+		end
+	end
 	describe "#my_map" do
 		it "maps the numbers multiplying them by 2" do
 			my_map = @randi.my_map { |n| n * 2 }
