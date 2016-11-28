@@ -34,6 +34,20 @@ describe Enumerable do
 			expect(result).to eql(expected)
 		end
 	end
+	describe "#my_all?" do
+		it "works with example words" do
+			animals = %w{ant bear cat}
+			expected = animals.all? 		{ |word| word.length >= 3 }
+			result   = animals.my_all? 	{ |word| word.length >= 3 }
+			expect(result).to eql(expected)
+		end
+
+		it "works with @rando" do
+			expected = @randi.all? 		{ |n| n > 5 }
+			result   = @randi.my_all? { |n| n > 5 }
+			expect(result).to eql(expected)
+		end
+	end
 	describe "#my_map" do
 		it "maps the numbers multiplying them by 2" do
 			my_map = @randi.my_map { |n| n * 2 }

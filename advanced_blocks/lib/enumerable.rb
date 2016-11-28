@@ -23,6 +23,14 @@ module Enumerable
 		return result
 	end
 
+	def my_all?(&block)
+		list = []
+		self.my_each do |element|
+			list << element if yield(element)
+		end
+		return list.size == self.size ? true : false
+	end
+
 	def my_map(&block)
 		result = []
 		my_each { |element| result << block.call(element) }
