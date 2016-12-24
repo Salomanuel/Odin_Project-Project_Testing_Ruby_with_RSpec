@@ -9,8 +9,10 @@ describe "tictac" do
 	describe "win" do
 		it "wins with an horizontal line" do
 			@tictac.move(0,0)
-			# tictac.move(1,0)
-			# tictac.move(2,0)
+			@tictac.move(1,0)
+			@tictac.move(2,0)
+			@tictac.score_check
+			expect(@tictac).to eql(2) #receive(:win?)
 		end
 	end
 end

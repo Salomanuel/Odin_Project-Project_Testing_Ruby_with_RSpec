@@ -197,4 +197,4 @@ uno.move(1,2)
 
 =end
 
-Tictac.new.start_game
+# Tictac.new.start_game
