@@ -135,6 +135,9 @@ class Tictac
 	def initialize
 		welcome
 		@move_count = 0
+	end
+
+	def start_game
 		before_turn
 	end
 
@@ -193,3 +196,4 @@ uno.move(1,2)
 #class FirstTests < Minitest::Test end
 
 =end
+Tictac.new.start_game
