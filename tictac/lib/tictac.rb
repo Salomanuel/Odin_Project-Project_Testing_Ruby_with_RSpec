@@ -147,6 +147,7 @@ class Tictac
 		puts "\tturn #{@move_count}"
 		change_player
 		send_move
+		after_turn
 	end
 
 	def after_turn
@@ -161,8 +162,7 @@ class Tictac
 		else
 			puts "\nyou cannot do this move\n"
 			send_move
-		end
-		after_turn		
+		end	
 	end
 end
 
@@ -196,4 +196,5 @@ uno.move(1,2)
 #class FirstTests < Minitest::Test end
 
 =end
+
 Tictac.new.start_game
