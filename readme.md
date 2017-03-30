@@ -1,13 +1,13 @@
-Ruby Programming >> Testing Ruby with RSpec >> Project: Testing Ruby
+Ruby Programming >> Testing Ruby with RSpec >> [Project: Testing Ruby](http://www.theodinproject.com/courses/ruby-programming/lessons/testing-ruby)
 
-#Project: Testing Ruby with RSpec
+# Project: Testing Ruby with RSpec
 
-##Warmup: Time Traveling
+## Warmup: Time Traveling
 A good way to get familiar with and begin contributing to a new project is to write tests for it. It's also the best way to become familiar with a new code base, something you'll have to do when you start working. It's pretty common for test code to ultimately take up twice as many lines of code as the actual project code!
 
 You still may feel shaky on RSpec at this point (which is totally normal), so let's go back in time and write tests for some of the code you've already done to build up a bit of muscle memory. If you've written a good batch, submit them below and we'll include them as part of the original project description to help future students!
 
-##Your Task
+## Your Task
 1. Go back to the [Building Blocks Project](http://www.theodinproject.com/ruby-programming/building-blocks) and write tests for your "Caesar's Cipher" code. It shouldn't take more than a half-dozen tests to cover all the possible cases. Do you remember how to make your tests run using `$ rake`?
 2. Go back to the [Advanced Building Blocks](http://www.theodinproject.com/ruby-programming/advanced-building-blocks) Project and write tests for any 6 of the enumerable methods you wrote there. In this case, identify several possible inputs for each of those functions and test to make sure that your implementation of them actually makes the tests pass. Be sure to try and cover some of the odd edge cases where you can.
 3. Write tests for your [Tic Tac Toe project](http://www.theodinproject.com/ruby-programming/oop). In this situation, it's not quite as simple as just coming up with inputs and making sure the method returns the correct thing. You'll need to make the tests determine victory or loss conditions are correctly assessed.
@@ -28,86 +28,4 @@ Only write exactly enough code to make your test pass. Oftentimes, you'll end up
 Your Task
 
     Build Connect Four! Just be sure to keep it TDD.
-
-Student Solutions
-
-Send us your solution so we can show others! Submit a link to the Github repo with your files in it here using any of the methods listed on the contributing page. Please include your partner's github handle somewhere in the description if they would like attribution.
-
-    Add your solution below this line!
-    Stefan P's solution
-    Leonard Soaivan's solution
-    Donald's solution
-    Marina Sergeyeva's solution
-    Tommy Noe's solution
-    James MacIvor's solution
-    Aleksandar's solution
-    Kate McFaul's solution
-    Artur Janik's solution
-    Dominik Stodolny's solution
-    Dawn Pattison's solution
-    Frank Peelen's solution
-    AtActionPark's solution
-    Alex Chen's solution
-    Dan Hoying's solution
-    Xavier Reid's solution
-    Sander Schepens's solution
-    Florian Mainguy's solution
-    Giorgos's solution
-    Alex Tsiras' solution
-    srashidi's solution
-    cdouglass's solution
-    James Brooks's solution
-    Luke Walker's solution
-    Tomasz Kula's solution
-    Miguel Herrera's solution
-    Max Gallant's solution
-    djhart's solution
-    Sophia Wu's solution
-    Fabricio Carrara's solution
-    Ricardo Villegas' solution (Game code, Game tests)
-    Kevin Mulherns solution
-    DV's solution
-    Shala Qweghen's solution
-    Amrr Bakry's solution
-    Jiazhi Guo's solution
-    m-chrzan's solution
-    Loris Aranda's solution
-    at0micr3d's solution
-    Dylan's solution
-    Austin Mason's solution
-    David Chapman's solution
-    Jerry Gao's solution
-    tholymap's solution
-    Francisco Carlos's solution
-
-Additional Resources
-
-This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something
-
-    RSpec Mock example SO question
-
-Discuss this Lesson on our Chat
-
-From the creators of The Odin Project...
-The Viking Code School
-Viking ad 180x150
-The Viking Code School
-Octocat
-Cc license 88x31
-Mark Project Completed
-
-Prev
-
-Lesson
-
-View
-
-Course
-
-Next
-
-Lesson
-Blog About FAQ Contributing
-Contact Press Legal Sitemap
-
 -->
